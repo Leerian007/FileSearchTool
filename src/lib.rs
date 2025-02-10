@@ -14,7 +14,7 @@ impl Config {
         }
         let query = args[1].clone();
         let file_path = args[2].clone();
-        let ignore = env::var("RUST_IGNORE").is_ok();
+        let ignore = env::var("IGNORE_CASE").is_ok();
         Ok(Config { query, file_path, ignore})
     }
 }
